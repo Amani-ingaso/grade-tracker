@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blue Wolf Grade Tracker</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="app-screen" class="container">
+    <header class="header">
+      <span class="title">Blue Wolf Grade Tracker</span>
+      <button id="logout-btn" class="btn-wolf">Logout</button>
+    </header>
+
+    <div class="card">
+      <h2>Record Grade</h2>
+      <div class="form-row">
+        <input id="student" class="form-control" placeholder="Student Name" />
+        <input id="subject" class="form-control" placeholder="Subject" />
+        <input id="grade" class="form-control" type="number" placeholder="Grade" />
+        <input id="weight" class="form-control" type="number" placeholder="Weight (%)" />
+        <button id="add-btn" class="btn-wolf">Add</button>
+
+    <button id="view-chart" class="btn-wolf">View Chart</button>
+
+      </div>
+    </div>
+    <div class="card">
+      <h2>Performance</h2>
+      <div id="performanceContainer"></div>
+      <button id="export-all" class="btn-wolf">Export All to CSV</button>
+    </div>
+  </div>
+
+  <script src="grades.js"></script>
+</body>
+</html>

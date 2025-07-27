@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grade Visualization</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="title">Grade Visualization</span>
+      <button id="back-btn" class="btn-wolf">Back</button>
+    </header>
+    <div class="card">
+      <canvas id="gradesChart"></canvas>
+      <p id="average">Average Grade: …</p>
+    </div>
+  </div>
+
+  <!-- Load Chart.js UMD build (makes global Chart available) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="visualization.js" defer></script>
+</body>
+</html>
+
+
+
